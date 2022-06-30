@@ -1,0 +1,111 @@
+.navbar {
+    background-color: $page-background !important;
+    .container {
+        .hamburger-dropdown {
+            position: relative;
+            width: 40px;
+            height: 40px;
+
+            overflow: hidden !important;
+            z-index: 6;
+            &.open {
+                mask: url("../../public/burger.svg");
+                mask-repeat: no-repeat;
+                background-color: $secondary;
+            }
+
+            &.close {
+                mask: url("../../public/close.svg");
+                mask-repeat: no-repeat;
+                background-color: $secondary;
+            }
+        }
+
+        .collapse {
+            flex-direction: column;
+            background-color: $page-background;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            justify-content: center;
+
+            .nav-link,
+            a {
+                display: block;
+                text-decoration: none;
+                color: $secondary;
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        .container {
+            .hamburger-dropdown {
+                .close-btn {
+                    .close-icon {
+                        right: 8%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        span {
+            img {
+                height: 50px !important;
+            }
+        }
+    }
+
+    .hamburger-dropdown {
+        min-width: 40px;
+        min-height: 40px;
+        .close-btn {
+            .close-icon {
+                right: 1.7rem !important;
+                height: 60px !important;
+                width: 60px !important;
+                top: 70px !important;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .navbar {
+        .hamburger-dropdown {
+            .close-btn {
+                .close-icon {
+                    right: 3.5rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar {
+        background-size: cover;
+        border: none;
+    }
+}
+@media (min-width: 1441px) {
+    .navbar {
+        .hamburger-dropdown {
+            .close-btn {
+                .close-icon {
+                    right: 17% !important;
+                }
+            }
+        }
+    }
+}

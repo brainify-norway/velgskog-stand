@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="25px" viewBox="0 0 38 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobil-spørsmål" transform="translate(-140.000000, -60.000000)" fill="#FFF9BF">
+            <g id="Group-10" transform="translate(72.000000, 60.000000)">
+                <g id="Group-9" transform="translate(68.000000, 0.000000)">
+                    <g id="Group-3">
+                        <rect id="Rectangle" x="0" y="7" width="8" height="11"></rect>
+                        <polygon id="Rectangle" points="7 7 17 0 17 25 7 18"></polygon>
+                    </g>
+                    <g id="sound" transform="translate(21.000000, 2.937898)">
+                        <polygon id="Rectangle-Copy-3" transform="translate(8.500000, 9.562102) rotate(-310.000000) translate(-8.500000, -9.562102) " points="-2.20368611 7.53888191 19.2188014 7.46028225 19.2036861 11.5853219 -2.21880143 11.6639215"></polygon>
+                        <polygon id="Rectangle-Copy-3" transform="translate(8.500000, 9.562102) scale(-1, 1) rotate(-310.000000) translate(-8.500000, -9.562102) " points="-2.20368611 7.53888191 19.2188014 7.46028225 19.2036861 11.5853219 -2.21880143 11.6639215"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
