@@ -1,7 +1,7 @@
-import { Container, Nav, Navbar, Collapse } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { Container, Nav, Navbar, Collapse } from "react-bootstrap";
 
 const NavMenu = () => {
     const [open, setOpen] = useState(false);

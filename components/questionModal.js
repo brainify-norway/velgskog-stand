@@ -1,11 +1,14 @@
 import { useState } from "react";
-import { IoMdCloseCircle } from "react-icons/io";
+// import { IoMdCloseCircle } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 export default function QuestionModal({
     questions,
-    currentVid,
     setCurrentVid,
+    setMute,
+    // questions,
+    // currentVid,
+    // setCurrentVid,
     item
 }) {
     const [open, setOpen] = useState(false);
@@ -17,6 +20,7 @@ export default function QuestionModal({
     function setVid(url) {
         setCurrentVid(url);
         setOpen(!open);
+        setMute(false);
     }
 
     return (
@@ -42,12 +46,9 @@ export default function QuestionModal({
                             <IoMdClose onClick={handleClick} />
                         </button>
                     </span>
-                    {questions.map((question) => {
+                    {questions.map((question, i) => {
                         return (
-                            <div
-                                key={question.question}
-                                className="question-wrapper"
-                            >
+                            <div key={i} className="question-wrapper">
                                 <div
                                     onClick={() => setVid(question.videoUrl)}
                                     className="question"

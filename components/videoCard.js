@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Video from "./video";
 import QuestionModal from "./questionModal";
+import Video from "./video";
 
 export default function VideoCard({ item }) {
     const [open, setOpen] = useState(false);

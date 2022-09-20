@@ -1,7 +1,8 @@
-import { Container } from "react-bootstrap";
+import Image from "next/image";
+import { Container, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 
-const Footer = ({ data }) => {
+const Footer = () => {
     return (
         <>
             <div className="main-footer">

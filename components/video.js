@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { BiPlay } from "react-icons/bi";
 export default function Video({
     url,
     loop,
@@ -16,12 +15,13 @@ export default function Video({
         vidRef.current.paused ? vidRef.current.play() : vidRef.current.pause();
         setPlaying(!vidRef.current.paused);
     }
-    function muting() {
-        vidRef.current.muted === true
-            ? (vidRef.current.muted = false)
-            : (vidRef.current.muted = true);
-        setMute(!vidRef.current.muted);
-    }
+    // function muting() {
+    //     vidRef.current.muted === true
+    //         ? (vidRef.current.muted = false)
+    //         : (vidRef.current.muted = true);
+    //     setMute(!vidRef.current.muted);
+    // }
+
     return (
         <>
             <span
@@ -36,7 +36,7 @@ export default function Video({
                     className={playing ? "pause " : "play "}
                 ></button>
                 <button
-                    onClick={muting}
+                    onClick={() => setMute(!mute)}
                     className={mute ? "unmuted " : "muted "}
                 ></button>
             </span>
@@ -48,6 +48,7 @@ export default function Video({
                     height: "500px"
                 }}
                 autoPlay
+                playsInline
                 loop={loop}
                 onEnded={() => setCurrentVid(featured)}
             >
