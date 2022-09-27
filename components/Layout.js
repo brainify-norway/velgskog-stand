@@ -83,7 +83,7 @@ const Layout = ({ data, ambassadorer }) => {
                     <Image
                         src="/bkg.jpg"
                         alt="Picture of the author"
-                        width={979}
+                        width={980}
                         height={580}
                     />
                 </div>
