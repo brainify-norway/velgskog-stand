@@ -1,8 +1,22 @@
-button {
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+button,
+.btn {
     border: none;
     background-color: $secondary;
     border-radius: 20px;
     padding: 5px 20px;
     color: $light;
-    margin-top: 10px;
+    margin: 15px auto;
+}
+
+@media (min-width: 992px) {
+    button,
+    .btn {
+        padding: 5px 15px;
+        margin: 15px auto;
+    }
 }

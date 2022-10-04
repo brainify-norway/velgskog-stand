@@ -1,6 +1,11 @@
 body {
     background-color: $page-background;
 }
+
+h3 {
+    font-size: 1.2rem;
+}
+
 .spinner-wrapper {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -62,8 +67,9 @@ body {
                 }
                 .video-box {
                     border-bottom: 2px solid $page-background;
-                    max-height: 498px;
+                    max-height: 500px;
                     overflow: hidden;
+                    margin-bottom: 70px;
                     video {
                         margin-bottom: -8px;
                         z-index: 1 !important;
@@ -82,28 +88,6 @@ body {
     }
 }
 
-.openModal {
-    position: absolute;
-    background-color: $page-background;
-    left: auto;
-    height: 130px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    color: $primary;
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px rgba($textPar, 0.5);
-    bottom: -15px;
-    .text {
-        text-align: center;
-        line-height: 1.1;
-    }
-}
-
 .video-card {
     .button {
         display: flex;
@@ -115,21 +99,21 @@ body {
         z-index: 4;
 
         .pause {
-            mask: url("../../public/pause.svg");
+            mask: url('../../public/pause.svg');
             mask-repeat: no-repeat;
             mask-size: 15px;
         }
         .play {
-            mask: url("../../public/play.svg");
+            mask: url('../../public/play.svg');
             mask-repeat: no-repeat;
             mask-size: 20px;
         }
         .muted {
-            mask: url("../../public/unmute.svg");
+            mask: url('../../public/unmute.svg');
             mask-repeat: no-repeat;
         }
         .unmuted {
-            mask: url("../../public/mute.svg");
+            mask: url('../../public/mute.svg');
             mask-repeat: no-repeat;
         }
         &.hideBtn {
@@ -164,6 +148,7 @@ body {
         &.container {
             padding: 0;
             margin: 0;
+
             .video-card {
                 .video-box {
                     height: 477px;
@@ -202,17 +187,27 @@ body {
     }
 
     .__inner {
+        position: relative;
         &.bg {
             display: block;
-            // background: linear-gradient($page-background 477px, #fff 100px);
             position: relative;
-            .background-img {
-                width: 980px;
-                height: 478px;
-                position: absolute;
-                overflow: hidden;
-                margin-left: auto;
-                margin-right: auto;
+        }
+
+        .image-background {
+            position: absolute;
+            max-width: 998px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 520px;
+            overflow: hidden;
+            text-align: center;
+            img {
+                margin: auto;
+                top: 0 !important;
+                bottom: 212px !important;
                 left: 0;
                 right: 0;
             }
@@ -220,13 +215,14 @@ body {
 
         .card-grid {
             width: 100%;
-            max-width: 900px;
+            max-width: 998px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0;
             margin-left: auto !important;
             margin-right: auto !important;
             justify-content: center;
+            // opacity: 0.4;
             .video-card {
                 position: relative;
                 grid-row: 1;
@@ -254,6 +250,22 @@ body {
         }
         .p1 {
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .__inner {
+        .image-background {
+            max-width: 1150px;
+
+            img {
+                bottom: 316px !important;
+            }
+        }
+
+        .card-grid {
+            max-width: 1150px;
         }
     }
 }
