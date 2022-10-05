@@ -1,6 +1,6 @@
-const API_URL = 'http://wpvelgskog.local/graphql';
+const API_URL = 'https://velgskog-wp.brfy.no/graphql';
 
-async function fetchAPI(query, { variables } = {}) {
+async function fetchAPI(query, { variables }: any = {}) {
     const headers = { 'Content-Type': 'application/json' };
 
     const res = await fetch(API_URL, {
