@@ -13,14 +13,12 @@
         display: flex;
         .close {
             position: absolute;
-            border: 2px solid $secondary;
             background-color: $light;
             color: $primary;
             margin-left: auto;
-            padding: 2px 3px 2px 3px;
-            right: -20px;
+            padding: 0;
+            right: -10px;
             top: -25px;
-
             svg {
                 width: 25px;
                 height: 25px;
@@ -79,35 +77,47 @@
     }
 
     .questionModal {
-        // min-width: 300px;
         z-index: 6 !important;
-    }
-    .jon-bjarne-onsoien {
-        z-index: 5;
-    }
+        overflow-y: scroll;
+        max-height: 400px;
 
-    .silje-waagard {
-        z-index: 4;
-    }
+        .button-wrapper {
+            .close {
+                right: 0;
+                top: 0;
+                margin-top: 0;
+                padding: 0;
+            }
+        }
+        .jon-bjarne-onsoien {
+            z-index: 5;
+        }
 
-    .remi-rundsveen-eriksen {
-        z-index: 3;
-    }
-    .andreas-grundvag-bottolfs {
-        z-index: 2;
-    }
+        .silje-waagard {
+            z-index: 4;
+        }
 
-    .ronja-wilsmanoien {
-        z-index: 1;
-    }
-    .question-wrapper {
-        padding: 5px 10px;
-        border: 2px solid $secondary;
-        margin-bottom: 20px;
-        border-radius: 15px;
+        .remi-rundsveen-eriksen {
+            z-index: 3;
+        }
+        .andreas-grundvag-bottolfs {
+            z-index: 2;
+        }
 
-        .question {
-            border-style: none !important;
+        .ronja-wilsmanoien {
+            z-index: 1;
+        }
+        .question-wrapper {
+            padding-left: 5px;
+            border: 2px solid $secondary;
+            margin-bottom: 5px;
+            border-radius: 15px;
+            line-height: 90%;
+
+            .question {
+                border-style: none !important;
+                font-size: 14px;
+            }
         }
     }
 }

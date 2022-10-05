@@ -63,7 +63,7 @@ h3 {
                 margin-right: auto;
                 margin-left: auto;
                 .button {
-                    margin-left: 0;
+                    margin-left: 40px;
                 }
                 .video-box {
                     border-bottom: 2px solid $page-background;
@@ -178,9 +178,6 @@ h3 {
     }
 }
 
-// @media (min-width: 768px) {
-// }
-
 @media (min-width: 992px) {
     .slider {
         display: none;
@@ -222,12 +219,21 @@ h3 {
             margin-left: auto !important;
             margin-right: auto !important;
             justify-content: center;
-            // opacity: 0.4;
             .video-card {
                 position: relative;
                 grid-row: 1;
                 .button {
-                    top: 5px;
+                    top: 30px;
+                }
+                .play {
+                    mask-size: 15px;
+                }
+                .muted,
+                .unmuted {
+                    mask-size: 30px;
+                }
+                .pause {
+                    mask-size: 10px;
                 }
             }
             .card-info {
@@ -257,15 +263,15 @@ h3 {
 @media (min-width: 1200px) {
     .__inner {
         .image-background {
-            max-width: 1150px;
+            max-width: 1300px;
 
             img {
-                bottom: 316px !important;
+                bottom: 419px !important;
             }
         }
 
         .card-grid {
-            max-width: 1150px;
+            max-width: 1300px;
         }
     }
 }
