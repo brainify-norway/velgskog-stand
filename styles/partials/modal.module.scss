@@ -75,5 +75,39 @@
 @media (min-width: 992px) {
     .openModal {
         padding: 5px;
+        z-index: 1;
+    }
+
+    .questionModal {
+        // min-width: 300px;
+        z-index: 6 !important;
+    }
+    .jon-bjarne-onsoien {
+        z-index: 5;
+    }
+
+    .silje-waagard {
+        z-index: 4;
+    }
+
+    .remi-rundsveen-eriksen {
+        z-index: 3;
+    }
+    .andreas-grundvag-bottolfs {
+        z-index: 2;
+    }
+
+    .ronja-wilsmanoien {
+        z-index: 1;
+    }
+    .question-wrapper {
+        padding: 5px 10px;
+        border: 2px solid $secondary;
+        margin-bottom: 20px;
+        border-radius: 15px;
+
+        .question {
+            border-style: none !important;
+        }
     }
 }
