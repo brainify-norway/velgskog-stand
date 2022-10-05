@@ -224,16 +224,26 @@ h3 {
                 grid-row: 1;
                 .button {
                     top: 30px;
+                    &.showBtn {
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                    }
                 }
+
                 .play {
                     mask-size: 15px;
+                    margin-right: 0;
                 }
                 .muted,
                 .unmuted {
                     mask-size: 30px;
+                    margin-left: 0;
                 }
                 .pause {
                     mask-size: 10px;
+                    margin-right: 0;
                 }
             }
             .card-info {
