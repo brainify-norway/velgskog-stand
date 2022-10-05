@@ -68,7 +68,7 @@ const Home: NextPage = ({ ambassadorer }: PageProps) => {
             <div className="__inner bg desktop">
                 <div className="image-background">
                     <Image
-                        src="/bakgrunn-2.jpg"
+                        src="/bg.jpg"
                         alt="Picture of the author"
                         width={3936}
                         height={2624}
