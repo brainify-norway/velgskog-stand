@@ -31,27 +31,9 @@ const NavMenu = () => {
                         <Nav id="nav-menu">
                             <Link
                                 className="menu-link"
-                                href="https://blirorlegger.no/"
+                                href="https://velgskog.no/"
                             >
                                 Forsiden
-                            </Link>
-                            <Link
-                                className="menu-link"
-                                href="https://blirorlegger.no/arbeidsliv/"
-                            >
-                                Arbeidsliv
-                            </Link>
-                            <Link
-                                className="menu-link"
-                                href="https://blirorlegger.no/kontakt/"
-                            >
-                                Kontakt oss
-                            </Link>
-                            <Link
-                                className="menu-link"
-                                href="https://blirorlegger.no/rorambassadorer/"
-                            >
-                                Våre ambassadører
                             </Link>
                         </Nav>
                     </Collapse>

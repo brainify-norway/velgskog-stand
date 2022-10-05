@@ -7,15 +7,15 @@
             height: 40px;
 
             overflow: hidden !important;
-            z-index: 6;
+            z-index: 7;
             &.open {
-                mask: url("../../public/burger.svg");
+                mask: url('../../public/burger.svg');
                 mask-repeat: no-repeat;
                 background-color: $secondary;
             }
 
             &.close {
-                mask: url("../../public/close.svg");
+                mask: url('../../public/close.svg');
                 mask-repeat: no-repeat;
                 background-color: $secondary;
             }
@@ -29,7 +29,7 @@
             position: fixed;
             left: 0;
             top: 0;
-            z-index: 5;
+            z-index: 6;
             justify-content: center;
 
             .nav-link,
