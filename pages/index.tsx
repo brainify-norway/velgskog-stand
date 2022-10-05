@@ -83,7 +83,11 @@ const Home: NextPage = ({ ambassadorer }: PageProps) => {
 
             <section className="container">
                 <span className="button-wrapper">
-                    <button className="btn center">Tilbake til forsiden</button>
+                    <a href="https://www.nhomd.no/velgskog">
+                        <button className="btn center">
+                            Tilbake til forsiden
+                        </button>
+                    </a>
                 </span>
             </section>
         </>
