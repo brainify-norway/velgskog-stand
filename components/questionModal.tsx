@@ -31,27 +31,29 @@ export default function QuestionModal({
             </div>
 
             {open && (
-                <div className="questionModal">
+                <>
                     <span className="button-wrapper">
                         <button className="close">
                             <IoMdCloseCircle onClick={handleClick} />
                         </button>
                     </span>
-                    {questions.map((question, i) => {
-                        return (
-                            <div key={i} className="question-wrapper">
-                                <span
-                                    onClick={() =>
-                                        setVid(question.video.mediaItemUrl)
-                                    }
-                                    className="question"
-                                >
-                                    {question.text}
-                                </span>
-                            </div>
-                        );
-                    })}
-                </div>
+                    <div className="questionModal">
+                        {questions.map((question, i) => {
+                            return (
+                                <div key={i} className="question-wrapper">
+                                    <span
+                                        onClick={() =>
+                                            setVid(question.video.mediaItemUrl)
+                                        }
+                                        className="question"
+                                    >
+                                        {question.text}
+                                    </span>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </>
             )}
         </>
     );
