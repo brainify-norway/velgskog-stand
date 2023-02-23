@@ -12,10 +12,10 @@ const NavMenu = () => {
                 <Container>
                     <Navbar.Brand href="https://www.rornorge.no">
                         <Image
-                            src="/logo-skog.svg"
+                            src="/logo.png"
                             alt="Picture of the author"
-                            width={100}
-                            height={50}
+                            width={125}
+                            height={60}
                         />
                     </Navbar.Brand>
 
