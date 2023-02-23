@@ -10,7 +10,7 @@ const NavMenu = () => {
         <>
             <Navbar expand="lg">
                 <Container>
-                    <Navbar.Brand href="https://www.rornorge.no">
+                    <Navbar.Brand href="https://www.nhomd.no/velgskog">
                         <Image
                             src="/logo.png"
                             alt="Picture of the author"
